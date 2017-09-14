@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator>
+  <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2017-09-14T14:05:49-04:00</updated>
+  <id>http://localhost:4000/</id>
+
+  
+    <title type="html">Rajith’s portfolio</title>
+  
+
+  
+    <subtitle>My personal site to document and showcase my projects and also my credentials.</subtitle>
+  
+
+  
+
+  
+  
+    <entry>
+      <title type="html">Education</title>
+      <link href="http://localhost:4000/education/2017/05/20/education/" rel="alternate" type="text/html" title="Education" />
+      <published>2017-05-20T00:00:00-04:00</published>
+      <updated>2017-05-20T00:00:00-04:00</updated>
+      <id>http://localhost:4000/education/2017/05/20/education</id>
+      <content type="html" xml:base="http://localhost:4000/education/2017/05/20/education/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Other projects are being added, Site still work in progress</title>
+      <link href="http://localhost:4000/projects/2017/05/17/MoreProj/" rel="alternate" type="text/html" title="Other projects are being added, Site still work in progress" />
+      <published>2017-05-17T00:00:00-04:00</published>
+      <updated>2017-05-17T00:00:00-04:00</updated>
+      <id>http://localhost:4000/projects/2017/05/17/MoreProj</id>
+      <content type="html" xml:base="http://localhost:4000/projects/2017/05/17/MoreProj/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Advanced VLSI Testing and Verification</title>
+      <link href="http://localhost:4000/projects/2017/05/17/AdvancedVLSISystemTesting/" rel="alternate" type="text/html" title="Advanced VLSI Testing and Verification" />
+      <published>2017-05-17T00:00:00-04:00</published>
+      <updated>2017-05-17T00:00:00-04:00</updated>
+      <id>http://localhost:4000/projects/2017/05/17/AdvancedVLSISystemTesting</id>
+      <content type="html" xml:base="http://localhost:4000/projects/2017/05/17/AdvancedVLSISystemTesting/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Ifosys</title>
+      <link href="http://localhost:4000/experiences/2017/01/20/ifosys/" rel="alternate" type="text/html" title="Ifosys" />
+      <published>2017-01-20T00:00:00-05:00</published>
+      <updated>2017-01-20T00:00:00-05:00</updated>
+      <id>http://localhost:4000/experiences/2017/01/20/ifosys</id>
+      <content type="html" xml:base="http://localhost:4000/experiences/2017/01/20/ifosys/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Matlab" />
+      
+        <category term="Python" />
+      
+        <category term="PCB design" />
+      
+        <category term="Lasers" />
+      
+        <category term="Fiber Optics" />
+      
+        <category term="Uart" />
+      
+        <category term="XYZ stage" />
+      
+        <category term="Power Supplies" />
+      
+        <category term="Thermoelectric Coolers" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Merging multiple pcb laout/gerber files - Tutorial</title>
+      <link href="http://localhost:4000/projects/2016/12/20/GerbMerge/" rel="alternate" type="text/html" title="Merging multiple pcb laout/gerber files - Tutorial" />
+      <published>2016-12-20T00:00:00-05:00</published>
+      <updated>2016-12-20T00:00:00-05:00</updated>
+      <id>http://localhost:4000/projects/2016/12/20/GerbMerge</id>
+      <content type="html" xml:base="http://localhost:4000/projects/2016/12/20/GerbMerge/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Hardware" />
+      
+        <category term="PCB" />
+      
+        <category term="Eagle" />
+      
+        <category term="Python" />
+      
+        <category term="Simple Parse" />
+      
+        <category term="CAM files" />
+      
+        <category term="Excellion" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Improved Ammeter PCB design from scratch + 3D printing</title>
+      <link href="http://localhost:4000/projects/2016/12/20/Ammeter_PCB/" rel="alternate" type="text/html" title="Improved Ammeter PCB design from scratch + 3D printing" />
+      <published>2016-12-20T00:00:00-05:00</published>
+      <updated>2016-12-20T00:00:00-05:00</updated>
+      <id>http://localhost:4000/projects/2016/12/20/Ammeter_PCB</id>
+      <content type="html" xml:base="http://localhost:4000/projects/2016/12/20/Ammeter_PCB/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Hardware" />
+      
+        <category term="PCB" />
+      
+        <category term="3D Printing" />
+      
+        <category term="Eagle" />
+      
+        <category term="Autocad" />
+      
+        <category term="Inventor" />
+      
+        <category term="Ammeter" />
+      
+        <category term="SPI communication" />
+      
+        <category term="I2C" />
+      
+        <category term="AVR" />
+      
+        <category term="Embedded system" />
+      
+        <category term="Embedded C++" />
+      
+        <category term="Design Verification" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Data Structures using Java</title>
+      <link href="http://localhost:4000/projects/2016/12/20/DataStructures/" rel="alternate" type="text/html" title="Data Structures using Java" />
+      <published>2016-12-20T00:00:00-05:00</published>
+      <updated>2016-12-20T00:00:00-05:00</updated>
+      <id>http://localhost:4000/projects/2016/12/20/DataStructures</id>
+      <content type="html" xml:base="http://localhost:4000/projects/2016/12/20/DataStructures/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Software" />
+      
+        <category term="Java" />
+      
+        <category term="Data Structures" />
+      
+        <category term="Linked Lists" />
+      
+        <category term="Lists" />
+      
+        <category term="Graphs" />
+      
+        <category term="Queues" />
+      
+        <category term="Heaps" />
+      
+        <category term="Hash Tables" />
+      
+        <category term="Stacks" />
+      
+        <category term="Trees" />
+      
+        <category term="Binary Trees" />
+      
+        <category term="Search Algorithms" />
+      
+        <category term="Sorting" />
+      
+        <category term="Quick sort" />
+      
+        <category term="Merge sort" />
+      
+        <category term="bubble sort" />
+      
+        <category term="Time complexity" />
+      
+        <category term="space complexity" />
+      
+        <category term="Coding" />
+      
+        <category term="Debugging" />
+      
+        <category term="Red black trees" />
+      
+        <category term="Eclipse" />
+      
+        <category term="Netbeans" />
+      
+        <category term="Text Editor" />
+      
+        <category term="Atom" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Bnl</title>
+      <link href="http://localhost:4000/experiences/2016/08/15/bnl/" rel="alternate" type="text/html" title="Bnl" />
+      <published>2016-08-15T00:00:00-04:00</published>
+      <updated>2016-08-15T00:00:00-04:00</updated>
+      <id>http://localhost:4000/experiences/2016/08/15/bnl</id>
+      <content type="html" xml:base="http://localhost:4000/experiences/2016/08/15/bnl/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="LabView" />
+      
+        <category term="Strain Gauges" />
+      
+        <category term="PLC" />
+      
+        <category term="FPGA" />
+      
+        <category term="PXI" />
+      
+        <category term="DAQ" />
+      
+        <category term="Level Probes" />
+      
+        <category term="Liquid Helium" />
+      
+        <category term="Flow meters" />
+      
+        <category term="Superconducting" />
+      
+        <category term="Magnets" />
+      
+        <category term="Cryogenics" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Smart outlet controlled by sunrise/sunset/app [IoT]</title>
+      <link href="http://localhost:4000/projects/2016/01/10/SmartHome/" rel="alternate" type="text/html" title="Smart outlet controlled by sunrise/sunset/app [IoT]" />
+      <published>2016-01-10T00:00:00-05:00</published>
+      <updated>2016-01-10T00:00:00-05:00</updated>
+      <id>http://localhost:4000/projects/2016/01/10/SmartHome</id>
+      <content type="html" xml:base="http://localhost:4000/projects/2016/01/10/SmartHome/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Software" />
+      
+        <category term="Iot" />
+      
+        <category term="Spark Core" />
+      
+        <category term="IFTTT" />
+      
+        <category term="Smart home" />
+      
+        <category term="Smart lamp" />
+      
+        <category term="Smart Outlet" />
+      
+        <category term="Relays" />
+      
+        <category term="microcontrollers" />
+      
+        <category term="Sun controlled" />
+      
+        <category term="instructables" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Bnl</title>
+      <link href="http://localhost:4000/experiences/2015/08/06/bnl/" rel="alternate" type="text/html" title="Bnl" />
+      <published>2015-08-06T00:00:00-04:00</published>
+      <updated>2015-08-06T00:00:00-04:00</updated>
+      <id>http://localhost:4000/experiences/2015/08/06/bnl</id>
+      <content type="html" xml:base="http://localhost:4000/experiences/2015/08/06/bnl/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="LabView" />
+      
+        <category term="Strain Gauges" />
+      
+        <category term="PLC" />
+      
+        <category term="FPGA" />
+      
+        <category term="PXI" />
+      
+        <category term="DAQ" />
+      
+        <category term="Level Probes" />
+      
+        <category term="Liquid Helium" />
+      
+        <category term="Flow meters" />
+      
+        <category term="Superconducting" />
+      
+        <category term="Magnets" />
+      
+        <category term="Cryogenics" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
