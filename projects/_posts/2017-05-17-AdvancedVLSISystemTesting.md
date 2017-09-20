@@ -8,6 +8,7 @@ alt: image-alt
 project-date: MAY 2017
 client: personal
 tags:
-description: Content will be added soon. Site still under progress. 
+description: |
+    
 link: <a href="https://radrajith.github.io/ESE_323_PCB_Design/">Project website
 ---
