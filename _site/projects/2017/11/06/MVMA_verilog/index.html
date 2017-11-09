@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matrix Vector Multiplication hardware Generator using System Verilog</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="My personal site to document and showcase my projects and also my credentials.">
+    <meta name="keywords" content="Resume, Portfolio, Hire, job, Rajith, Raj, Radhakrishnan, Rajith Radhakrishnan, Engineer, Design Verification engineer, Hardware engineer, Software engineer, Coder, VLSI" />
+    <meta name="author" content="Radhakrishnan Rajith">
+    <link rel="canonical" href="http://localhost:4000/projects/2017/11/06/MVMA_verilog/">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google verification -->
+    
+
+    <!-- Bing Verification -->
+    
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109440097-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109440097-1');
+</script>
+
+</head>
+
+    <body id="page-top" class="index">
+       <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Rajith's portfolio</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Projects</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+        <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Rajith's portfolio</span>
+                        <hr class="star-light">
+                        <span class="skills">Electrical Engineer - Hardware and software enthusiast - Graduate Student</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal-10" class="portfolio-link" data-toggle="modal" onclick="pushHistory()">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <h6>Matrix Vector Multiplication hardware Generator using System Verilog</h6>
+                            <img src="img/portfolio/mvma.png" class="img-responsive" alt="image-alt">
+                        </a>
+                    </div>
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal-8" class="portfolio-link" data-toggle="modal" onclick="pushHistory()">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <h6>Parity Generator - VLSI Layout</h6>
+                            <img src="img/portfolio/parityGen_layout_200nm.png" class="img-responsive" alt="image-alt">
+                        </a>
+                    </div>
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal-9" class="portfolio-link" data-toggle="modal" onclick="pushHistory()">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <h6>VLSI Netlist Partitioning using Fiduccia Mattheyses</h6>
+                            <img src="img/portfolio/FM.png" class="img-responsive" alt="image-alt">
+                        </a>
+                    </div>
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal-4" class="portfolio-link" data-toggle="modal" onclick="pushHistory()">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <h6>Advanced VLSI Testing and Verification</h6>
+                            <img src="img/portfolio/VLSI_Chip.jpg" class="img-responsive" alt="image-alt">
+                        </a>
+                    </div>
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal-7" class="portfolio-link" data-toggle="modal" onclick="pushHistory()">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <h6>Merging multiple pcb laout/gerber files - Tutorial</h6>
+                            <img src="img/portfolio/PCB.jpg" class="img-responsive" alt="image-alt">
+                        </a>
+                    </div>
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal" onclick="pushHistory()">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <h6>Improved Ammeter PCB design from scratch + 3D printing</h6>
+                            <img src="img/portfolio/ammeter.jpg" class="img-responsive" alt="image-alt">
+                        </a>
+                    </div>
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal-2" class="portfolio-link" data-toggle="modal" onclick="pushHistory()">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <h6>Data Structures using Java</h6>
+                            <img src="img/portfolio/Java.jpg" class="img-responsive" alt="image-alt">
+                        </a>
+                    </div>
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal-3" class="portfolio-link" data-toggle="modal" onclick="pushHistory()">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <h6>Smart outlet controlled by sunrise/sunset/app [IoT]</h6>
+                            <img src="img/portfolio/iot.jpg" class="img-responsive" alt="image-alt">
+                        </a>
+                    </div>
+                
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal-5" class="portfolio-link" data-toggle="modal" onclick="pushHistory()">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <h6>Other projects are being added, Site still work in progress</h6>
+                            <img src="img/portfolio/image-alt.jpg" class="img-responsive" alt="image-alt">
+                        </a>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+     <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About Me</h2>
+                    <hr class="star-light">
+                  </div>
+                </div>
+                <div class="row">
+                  <ul class="list-inline item-details">
+                     <!-- education -->
+                     <h3 class="section-title">Education</h3>
+                     
+                      <p><p style="text-align:left;"><b>Stony Brook University, College of Engineering and Applied Sciences</b>
+  <span style="float:right;"><b>Stony Brook, NY, USA</b></span>
+</p>
+<p style="text-align:left;">Master of Science in Electrical Engineering [GPA: 4.00/4.00]
+  <span style="float:right;">           May 2018</span>
+</p>
+<p style="text-align:left;">Bachelor of Engineering in Electrical Engineering (Honors Program) [GPA: 3.85/4.00]
+  <span style="float:right;">         May 2017</span>
+</p>
+<p style="text-align:left;">Minor: Physics
+  <span style="float:right;"> <b>Dean's List:</b>            Fall 2013 - May 2017</span>
+</p>
+</P>
+                       
+                     <hr class="star-light">
+                     <!-- experiences -->
+                    <h3 class="section-title">Experience</h3>
+                    
+                      <p style="text-align:left;"><b>Integrated Fiber Optics Systems, Inc</b>
+                        <span style="float:right;"><b>Setauket, NY</b></span>
+                      </p>
+                      <p style="text-align:left;"><b>Product Design and Development Engineer</b>
+                        <span style="float:right;"><b>Winter 2016 - Present</b></span>
+                      </p>
+                      <p><ul>
+<li><p>Designed embedded systems to control and operate dual lasers for effective cataract diagnosis. </p></li>
+<li><p>	Developed Laser power supply systems and Thermoelectric cooling systems to deliver and regulate the laser output power. </p></li>
+<li><p>	Created control software based in both Python and in MATLAB for the implemented design as well as for XYZ stage control.</p></li>
+<li><p>	Constructed user-friendly GUIs for front-end control of the ophthalmological diagnostic system. </p></li>
+<li><p>	Coding and monitoring sensors outputs using UART, SPI and I2C communication protocols. </p></li>
+<li><p>	Prototype stage design verification and debugging of both hardware and software
+</p></li>
+</ul>
+</P>
+                        <!-- 
+                        <i class="fa fa-search-plus" aria-hidden="true">&nbspMore Info</i>
+                         -->
+                      <hr class="style17">
+                      
+                      <p style="text-align:left;"><b>Brookhaven National Lab</b>
+                        <span style="float:right;"><b>Upton, NY</b></span>
+                      </p>
+                      <p style="text-align:left;"><b>Engineering Intern</b>
+                        <span style="float:right;"><b>Summer 2016</b></span>
+                      </p>
+                      <p><ul>
+<li><p>Wrote program to control level probes and flow meters to maintain liquid helium levels in superconducting magnets.</p></li>
+<li><p>Collected quantitative data using Programmable Logic Controllers (PLCs) and Field Programmable Gate Arrays (FPGA).</p></li>
+<li><p>Developed System to obtain and process data from Strain gauge sensors.</p></li>
+<li><p>Wrote software to test IRCMS cancer research magnet for next generation oncology treatment.</p></li>
+</ul>
+</P>
+                        <!-- 
+                        <i class="fa fa-search-plus" aria-hidden="true">&nbspMore Info</i>
+                         -->
+                      <hr class="style17">
+                      
+                      <p style="text-align:left;"><b>Brookhaven National Lab</b>
+                        <span style="float:right;"><b>Upton, NY</b></span>
+                      </p>
+                      <p style="text-align:left;"><b>Engineering Intern</b>
+                        <span style="float:right;"><b>Summer 2015</b></span>
+                      </p>
+                      <p><ul>
+<li><p>Wrote a custom LabVIEW program to analyze data from superconducting magnets for the CERN particle accelerator.</p></li>
+<li><p>Wrote DAQ program for NI PXIe 1075 to collect voltage and current measurements from Magnets.</p></li>
+<li><p>Optimized the user interface to handle millions of data points gathered every instant.</p></li>
+<li><p>Devised a means of assessing magnet quenching and system failure.</p></li>
+</ul>
+</P>
+                        <!-- 
+                        <i class="fa fa-search-plus" aria-hidden="true">&nbspMore Info</i>
+                         -->
+                      <hr class="style17">
+                      
+                      <p style="text-align:left;"><b>Stony Brook University</b>
+                        <span style="float:right;"><b>Stony Brook, NY</b></span>
+                      </p>
+                      <p style="text-align:left;"><b>Teaching Assistant, Digital System Design</b>
+                        <span style="float:right;"><b>Fall 2014</b></span>
+                      </p>
+                      <p><ul>
+<li><p>Instructed a classroom of 20 students on designing applications using logic gates.</p></li>
+<li><p>Assisted individual design groups in hardware testing, which included optimization of the hardware-software interface.</p></li>
+</ul>
+</P>
+                        <!--  -->
+                      <hr class="style17">
+                      
+                      <hr class="star-light">
+                    </ul>
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                      <a href="https://app.box.com/s/ho2xuo9jv52bl80nmi265htcv05oq1it" target="_blank" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Resume
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+    
+    <!-- Contact Section -->
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2>Contact Me</h2>
+				<hr class="star-primary">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<form  action="//formspree.io/radrajith@gmail.com" method="POST" name="sentMessage" id="contactForm" novalidate>
+					<div class="row control-group">
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							<label>Name</label>
+							<input type="text" name="name" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<div class="row control-group">
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							<label>Email Address</label>
+							<input type="email" name="_replyto" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<div>
+						<input type="hidden"  name="_subject" value="New submission!">
+						<input type="text" name="_gotcha" style="display:none" />
+					</div>
+					<div class="row control-group">
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							<label>Message</label>
+							<textarea rows="5" name="message" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<br>
+					<div id="success"></div>
+					<div class="row">
+						<div class="form-group col-xs-12">
+							<button type="submit" class="btn btn-success btn-lg">Send</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+    
+
+        <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>
+                            
+                                New Hyde Park, NY 11040 <br>
+		                    
+                        </p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/in/rajith-radhakrishnan-265b5119/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+		                    
+                            <li>
+                                <a href="http://github.com/radrajith" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+		                    
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Theme Credit</h3>
+                        <p>open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Dr. Henry Jekyll 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+     <!-- Portfolio Modals -->
+ 
+    <div class="portfolio-modal modal fade" id="portfolioModal-10"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" >
+                        <div class="modal-body">
+                            <h2>Matrix Vector Multiplication hardware Generator using System Verilog</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/mvma.png" class="img-responsive img-centered"  alt="image-alt">
+                            <!-- 
+                              <h4><p class="text-left"><a href="https://github.com/radrajith/Pipelined_Matrix_Multiplier_NeuralNetwork/tree/master/proj2/Matrix%20Multiplier%20source%20code">Matrix Vector Mulitplier source code + TestBench (Private atm, can be provided on request)  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                             -->
+                            <p class="text-justify"><h3 align="left"><a id = "Introduction">>Objective</a></h3>
+<p class="text-justify">The objective of this design process was the implementation of a unit written in SystemVerilog using a previously designed Multiply-Accumulate block. Taking the MAC, a 3x3 matrix and a vector were to be input into the system to perform Matrix Vector Multiplication. Eventually, the MVM will take in another vector for addition after the MVM in the second part of the project. Once the MVMA is implemented, the 3x3 matrix will be expanded to a 4x4 matrix along with the other vector lengths adjusted accordingly. In terms of control and data paths, a handshaking protocol is necessary to tell the system when its ready to take in inputs and when there are valid inputs to write in. This protocol is an important step and consideration in timing verification that will be observed later in the project. The eventual goal of the project will be to use this MVMA system as a neural network layer.
+
+
+
+<hr class="star-primary">
+<h3 align="left"><a id = "Part 1">>Part I: 3x3 Matrix Vector Multiplication</a></h3>
+<p class="text-justify">Adding memory elements to the multiply and accumulate blocks that were designed previously allowed for the implementation of a matrix vector multiplier with a three by three matrix input along with a vector of length three. A hand-shaking protocol is employed between the master and slave ports to ensure that valid data is being passed. There are two particular signals - "ready" and "valid", which are sent from the slave and master to the other respectively. When the master passes data to the slave, it also uses the "valid" signal to indicate that the data is indeed correct. The slave block sends back a "ready" signal to the master to show that it is prepared to take the passed data. With the synchronous nature of the system, triggered by positive clock edges, the only time when data should be passed is when both "valid" and "ready" are asserted. This protocol introduces complexity in terms of timing and in conjunction with reading and writing to memory.
+<p class="text-justify">The inputs to the system will be sequentially sent, following the matrix row then vector order. These inputs will be multiplied then accumulated for each specific row, with an overflow detection when the output is larger than the sixteen bits assigned to it. When the accumulator is cleared for next matrix row-vector multiplication, the overflow will also be cleared to reset the detection for the next value. This part of the hardware design is the datapath, with the control signals to this separated and placed in a control module. Figure above shows the structure of the datapath to be implemented. Inputs other than the data are the control signals to each memory block.
+<p class="text-justify">For ensured control over the system inputs controlling the datapath, the control module was written with interconnects to the datapath as seen in figure 2. The testbench used for verification was as important as the design process so that it could be known whether or not the design was working correctly or not.
+<p><figure><img src="img/portfolio/mvma/control_data_path.png"></img><figcaption>Fig 2. Block diagram showing the control signals to be passed to the datapath [Figure Credits: Prof. Milder]</figcaption></figure>
+
+
+<p class="text-justify">Given the 3x3 matrix with the 3 length vector, a natural question to ask is what the number of (specifically arithmetic) operations needed to multiply them is. There are 9 multiplications for each element of the matrix with the corresponding column value of the vector. There are then 6 additions total; 2 for each row of the resultant vector. This is total of 15 arithmetic operations. Generalizing the formula to account for a k x k matrix and k length column vector, one has k x k total multiplications, and k-1 additions per row of the output column vector. Since there are k columns, there are k*(k-1)=k^2-k additions total. The total arithmetic operation count would then be: k^2+k^2-k = 2k^2-k. It is noted that this is the mathematical answer, and is not the case for certain designs. When the accumulator is cleared (as in our design), a zero vector is added, thus bringing up the count to 2k^2
+<p class="text-justify">The control module in the program makes use of counters for the proper timing of assertion and deassertion of control signals. In addition to the general counter, there is also a separate counter for write cycles. For the first 0 to 11(9+3) counts, the input data is obtained and stored in the corresponding memory. From counts 12 to 19, the computation is performed and the data is outputted. In general, when the inputs are taken in, the count is increased until k-1 inputs are written in and immediately after the last k-th input is written in, the write_enable signals are set to 0 and the write counter is activated. A clock cycle later, the data is fed to the MAC. Depending on the counter values, the address signals and write enable signals are assigned. Whenever the write counter reaches value (n*k)-1 (where n goes from 1 to k), the enable signal is set high and at the next clock cycle the m_valid will be asserted. When the vector x address is 1 and the counter is greater than (k^2+k)-1 the accumulator will be cleared. Based on the counter values a specific code block will be called for executed.
+
+<p class="text-justify">Initially the rudimentary verification strategy was using the testbench provided to compare the circuit's simulated behavior with the timing requirements. After confirming proper operation, a random-number based testbench was created. A python script [tb_gen1.py] was written to generate the signals. The input signals "reset", s_valid, data_in, and m_ready are randomly generated and stored in the "part1_tb_inputdata.txt" file. The python script will also perform the matrix vector multiplication itself and generate the output signals s_valid, m_valid, data_out, overflow. Both input and output signals will be stored in the "part1_tb_outputdata.txt" file. This file was originally intended to be the simulation and to match all the signals, but due to slight complications this approach was abandoned and this file was used only in the case of a mismatch between the data files.
+
+<p class="text-justify">Initially the rudimentary verification strategy was using the testbench provided to compare the circuit's simulated behavior with the timing requirements. After confirming proper operation, a random-number based testbench was created. A python script [tb_gen1.py] was written to generate the signals. The input signals "reset", s_valid, data_in, and m_ready are randomly generated and stored in the "part1_tb_inputdata.txt" file. The python script will also perform the matrix vector multiplication itself and generate the output signals s_valid, m_valid, data_out, overflow. Both input and output signals will be stored in the "part1_tb_outputdata.txt" file. This file was originally intended to be the simulation and to match all the signals, but due to slight complications this approach was abandoned and this file was used only in the case of a mismatch between the data files.
+
+<p class="text-justify"> To check the functionality of the circuit, the data_out and overflow signals were extracted and stored in a separate file ("part1_dataout.txt") for ease of comparison. The data_out and overflow signals will only be saved to the file when both m_valid and m_ready are high, similar to the functionality of the circuit. Since only the data_out, m_valid, and overflow signals of the DUT will be seen from an external viewpoint, it is safe to check only those signals. Even though the m_valid signal will be generated by the DUT, the data_out depends on the m_valid signals and there isn't any need to output this signal to the file and once again check the validity  of the m_valid. Up to 1 billion clock cycles were run and compared for the circuit verification. Instructions on the script file usage are on the readme.md file.
+
+<p class="text-justify">A script was written to extract the desired parameters of area, power, frequency, and the critical path location for the synthesized design. It is noted that the synthesis was run with the "ultra" configuration. These values are seen in Figure 3. The frequency can be obtained by taking the multiplicative inverse of the clock period, so 1/1.8ns=555MHz is the frequency. Total dynamic power is 699.08uW, cell leakage power is 34.46uW (Total Power=733.54uW),and total cell area is 1630.048um^2.
+
+<p><figure><img src="img/portfolio/mvma/part1_q1_synthesis_report.png"></img><figcaption>Fig 3. Part 1: Condensed Synthesis Report</figcaption></figure>
+
+<p class="text-justify">Looking at the critical path, the start point is the beginning memory register, leading to the overflow register. This is much the same as the unpipelined MAC from the first project. Since there is no pipelining at this stage separating the combinational blocks, it stands to reason that the critical path would be one of the input registers to one of the output registers. In this case, with the synthesized blocks, the longest delay led to the overflow-detecting register.
+
+<p class="text-justify">Assuming that s_valid and m_ready are asserted input signals without any delay, the circuit will require 12 clock cycles to read the inputs, 3+1 clock cycles to compute and output one matrix vector multiplication result with k=3. When the DUT transitions from inputting the data to computing and outputting, one extra clock cycle is required to change the address as well as the write enable signals. Once the data set is obtained from  memory, it is unnecessary to wait for the computation. As such, the next round of data inputs will be read from memory at the same time as computation occurs. This approach is the same for the last element, with the next set of inputs written in at the same time as the last computation. In this case, the design has a total clock cycle requirement of 12+1+3+3+3=22 cycles. This is the sum of the requirements from signal input to signal output. If the overlap were to be accounted for, the total number of cycles would be reduced by one, being only 21 cycles. The system delay is found to be 22 * 1.8ns = 39.6ns.
+
+<p class="text-justify">The area-delay product takes the given area of the design from the synthesis tool and multiplies it with the delay calculated for a complete computation. In the previous question, the later was found to be about 39.6ns while the total cell area is seen in figure 3 to be 1630.0479um^2. Multiplying these two values 39.6ns * 1630.0479um^2, the resulting value is 64.55us*um^2.
+
+<p class="text-justify">Total power consumed per ns is found in the synthesis report in Figure 3 to be 733.54uW. In the case that the system is computing a matrix-vector multiplication, the 39.6ns time for the completion of the sequence can be used with the power to calculate the energy required for said completion. Since P=E/T, E=733.54uW*39.6ns=29048.10fJ.
+
+<p class="text-justify">During the initial implementation of the MVM, it was discovered during synthesis that the a combinational loop was present in the design, producing a latch. The output of the MAC module was set as an input of the MAC module, creating this loop. This was not a desirable feature, so instead of feedback being handled combinationally, this problem was fixed by adding a temporary storage register in the MAC module called "mulVal". By storing the output int this module, and using the "dataout" signal as the feedback input, the loop was broken by the sequential block without affecting the desired logical operation.
+
+<p class="text-justify">Another problem was the method used for the control of accumulation (in avoiding multiple accumulations of the same input data) and output data computation. Using the change in the input signal (element from matrix m and vector x) as a control seemed to work at first, but when the testbench was run for a billion clock cycles, there was a moment where the matrix m and x did not change for 2 counter increments, thus proving that this way was not a robust way. This strategy was then abandoned and the whole code was rewritten with a delayed version of m_valid signal to prevent multiple accumulations.
+
+<p class="text-justify">The simple testbenches were also successful, with the results of the first one in Figure 4 and shown as a waveform in Figure 5. The second provided testbench was also successfully completed as shown in Figure 6 and in waveform view in Figure 7.
+
+<p><figure><img src="img/portfolio/mvma/part1_simpletb_results.png"></img><figcaption>Fig 4. Part 1: Simple Testbench 1</figcaption></figure>
+
+<p><figure><img src="img/portfolio/mvma/part1_simpletb_wf.png"></img><figcaption>Fig 5. Part 1: Simple Testbench 1 Waveform</figcaption></figure>
+
+<p><figure><img src="img/portfolio/mvma/part1_simpletb2_results.png"></img><figcaption>Fig 6. Part 1: Simple Testbench 2</figcaption></figure>
+
+<p><figure><img src="img/portfolio/mvma/part1_simpletb2_wf.png"></img><figcaption>Fig 7. Part 1: Simple Testbench 2 Waveform</figcaption></figure>
+
+<hr class="star-primary">
+<h3 align="left"><a id = "part2">>Part II: 3x3 Matrix-Vector Multiplication plus Vector Addition</a></h3>
+<p class="text-justify">Expanding upon the design of the 3x3 MVM computational system, the next part of the project was to implement a vector addition to the original MVM block. After the completion of the kxk (m matrix) MVM with k length vector x, a vector (b) of corresponding length k will be added. In this case, the order of input loading is the kxk inputs from m first, the k values from b next, then finally the k values from x. Since the addition of vector b is done after the MVM, but is loaded before the MVM is completed, extra memory is required. After storing b into memory, it can be set to feed back into the adder through the output register when a row of m*x is completed after 5 arithmetic operations. The sixth operation would be the final vector addition for that output vector row. Figure 8 is the high-level block diagram of how the design could be implemented.
+
+<p><figure><img src="img/portfolio/mvma/mac_plus_vec_add_highlevelblockdiagram.png"></img><figcaption>Fig 8. Part 2: Provided block diagram of 3x3 MVM plus vector addition [Figure credits: Prof. Milder]</figcaption></figure>
+
+<p><figure><img src="img/portfolio/mvma/synthesis2.png"></img><figcaption>Fig 9. Part 2: Condensed Synthesis Report for MVM+VA</figcaption></figure>
+
+<p class="text-justify">During verification, it was found that the addition of vector b did not behave the same when it was added to the front of the accumulation as opposed to the back. In the python script, the element of the vector b was added to the back. In the SystemVerilog code, it was added to the front. Assuming the range is from -10 to 10, if vector b was 10 while the matrix m and vector x accumulation step was (12 + -4), adding 10 (b) to the front will yield (10+12 = -8 + -4 = -12) and adding to the back will yield (8 + 10 = 18). Depending on the situation the overflow can be high or low, and this error resulted in disparity between the python script and the SystemVerilog results. The python script was then adjusted to add vector b to the front in order to fix this error. The number of runs was increased until one billion clock cycles to verify the correct functionality of the circuit. Figure 10 is the waveform view of a single complete cycle and the behaviors of the input signals as well as the control signals.
+<p><figure><img src="img/portfolio/mvma/oneCycle.png"></img><figcaption>Fig 10. Part 2: Waveform View of One Complete Cycle</figcaption></figure>
+
+<hr class="star-primary">
+<h3 align="left"><a id = "part3">>Part III: 4x4 Matrix-Vector Multiplication plus Vector Addition</a></h3>
+<p class="text-justify">The operational range of the MVM+VA system was increased from k=3 to k=4. This meant that the number of arithmetic operations changed to 32 from 18 mathematically (21 to 36). The sizes of the matrix m and vectors x and b were thus both increased as well, with matrix m being a 4x4 matrix with 16 elements and the two vectors being of length 4.
+
+<p class="text-justify">The source code was parametrized from the beginning, due to experiences had during project 1. The code includes parameters such as matrixWidth, mSize, vSize, vectorWidth and countWidth to aid in modification to the code without the need to manually change each one at every location. The parameter values of the matrix and vectors are assigned depending on their sizes. "matrixWidth" is the number of bits required to store the matrix, so if it's a 4x4 matrix, then matrixWidth is 4 (4 bits for 16 elements).
+
+<p class="text-justify">To generalize, a kxk matrix requires log_2(k*k) for its width. "mSize" is the matrix size (k*k). "vSize" is the vector size (k*1). "vectorWidth" is number of bits required to store the vector, which would be log_2(k). "countWidth" is the number bits required to store the counter.
+
+<p class="text-justify">For a kxk MVMA  calculation, the counter range is from 0 to 2*(k*k+k)-1, which is log_2(range) rounded up. Having parametrized the code, changing the code is simple, as mentioned earlier. As k increases, the control block will change as well to accommodate for the increase in matrix size and vector length. More specifically, the "if statements" monitoring the counter will be changed by the parameters as to meet the timing changes. Since the control block will send the signals to all the other blocks, there won't be any manual changes to the timing needed. Other than given memory, power and area limits imposed by the tool, there is no practical limit on the value of k.
+<p><figure><img src="img/portfolio/mvma/synthesis3.png"></img><figcaption>Fig 11. Part 3: Condensed Synthesis Report for 4x4 MVMA</figcaption></figure>
+
+<hr class="star-primary">
+<h3 align="left"><a id = "part4">>Part IV: Delay-Optimized System</a></h3>
+
+<p class="text-justify">The design so far was built for functionality, with the focus being on  achieving the proper timing of input signals and computations so the output would be correct. Some base optimizations were done in the previous module to streamline the process without modifying the datapath too much. A delay-optimized focus of the system would include multiple different design methodologies that would serve to greatly decrease delay. The limitation imposed on this part was the immutability of the input/output ports. Three different techniques were used to boost operational speed; pipelining, additional parallelism, and DesignWare Component selection.
+
+<p class="text-justify">In the previous project, pipelining was explored for faster operation of a MAC module. Registers were added between combinational blocks to shorten critical path drastically. This was implemented here was well. Additional parallelism was implemented by modifying the memory module to have serial input and parallel output. In addition to input memory, a memory module was added to the output with parallel in and serial out feature. By obtaining the data from memory in parallel, the time required to change addresses is eliminated. The counter has to wait one clock cycle to perform computation and output the data to outputMemory but can be overlapped with obtaining the next input data. Thus, while the counter needs to increment to 24 counts to obtain the input data, computation and outputting will be performed during the next cycle simultaneously. Parallelism helped in reducing the clock period from 2.5ns to 2ns, increasing the frequency from 400MHz to 500MHz. Figure 12 shows the met clock period with parallelism.
+
+<p><figure><img src="img/portfolio/mvma/synthesis_parallel.PNG"></img><figcaption>Fig 12. Part 4: synthesis report after parallelism</figcaption></figure>
+
+<p class="text-justify">As done in the first project, pipelining was implemented by adding a register between the multiplier and accumulator combinational blocks. As seen in the synthesis report, Figure 13, the critical path is from the input memory register to the output memory register. Adding the pipelined register in the combinational logic will reduce the clk period by shortening the critical path. This effectively doubled the clock frequency from 500MHz to 1.05GHz (or halved its period from 2ns to 0.95ns).  
+
+<p><figure><img src="img/portfolio/mvma/synthesis_addingregister.PNG"></img><figcaption>Fig 13. Part 4: synthesis report after pipelining</figcaption></figure>
+
+<p class="text-justify">The method of modifying control logic was one of the baseline optimizations done since the first part. Input and output data is overlapped, helping to reduce the wait time in outputting the last element. In this part, since there is output memory, the input and output data will be completely overlapped unless m_ready is 0 for a long time.
+
+<p class="text-justify">After adding the pipeline, the critical path is from multiplier to the output. The accumulator was completely dominated by combinational logic. Registers were added to pipeline the accumulator. This reduced the clock period further by another .05ns to 0.90ns, as seen in Figure 14 from 0.95ns. Total cell area was actually decreased a small amount for this run, but power was increased as expected with the increased frequency.
+
+<p><figure><img src="img/portfolio/mvma/synthesis_pipelinedaccumulator.PNG"></img><figcaption>Fig 14. Part 4: synthesis report after addition of registers to the accumulator</figcaption></figure>
+
+<p class="text-justify">With critical path set back again at the input memory register to the multiplier register, the DesignWare component method was used to increase clock speed further. The design was implemented using multistage multipliers provided by DesignWare. The first 2 stages were implemented, and the synthesis report is shown in Figure ref{fig:mesh15}. The clock period was reduced by another 10ns to 0.8ns. The beginning of the critical path was once again shifted to the multiplier register and the end of the path to the overflow memory register. This is due to the fact that the accumulator originally used only 2 registers.
+
+<p><figure><img src="img/portfolio/mvma/synthesis_2stage.PNG"></img><figcaption>Fig 15. Part 4: synthesis report after addition of 2 stage multiplier</figcaption></figure>
+
+<p class="text-justify">Adding a register at b and at mx0 reduced the clock period to 0.77ns (Figure 17 - offset was increased to 4). There were no more ideas for the simplification of the accumulator at this point. The critical path start was shifted to input memory with the end being the 2-stage multiplier. The waveform is included to show the offset of 3. After the counter changes to 0 on the 3rd clock cycle, the data is outputted (figure 16).
+
+<p><figure><img src="img/portfolio/mvma/wv_pipelineACC_offset3.PNG"></img><figcaption>Fig 16. Part 4: Waveform of Pipelined Multiplier and Pipelined Accumulator</figcaption></figure>
+
+<p><figure><img src="img/portfolio/mvma/synthesis_addregistertoacccum.PNG"></img><figcaption>Fig 17. Part 4: Synthesis report- Addition of another register to the accumulator</figcaption></figure>
+
+<p><figure><img src="img/portfolio/mvma/accumulator.PNG"></img><figcaption>Fig 18. Part 4: Accumulator setup</figcaption></figure>
+
+
+<p class="text-justify">More multiplier stages were added like in the first project. First, a 3-stage pipeline was tested. This reduced the clock period down to 0.6ns(Figure 19). The critical path start changed to the input memory register b and the end to accumulator. The stages of the pipeline were increased to 4, then 5 then 6. Each stage was tested and the clock period was still at 0.6ns (Figure 20) for the 4-stage. For the 5-stage and 6-stage pipeline, the clk period decreased, but remained at 0.55ns(Figures 21 and 22 respectively)
+
+<p><figure><img src="img/portfolio/mvma/synthesis_3stage.PNG"></img><figcaption>Fig 19. Part 4: Synthesis Report- 3 stages</figcaption></figure>
+
+<p><figure><img src="img/portfolio/mvma/synthesis_4stage.PNG"></img><figcaption>Fig 20. Part 4: Synthesis Report- 4 stages</figcaption></figure>
+
+<p><figure><img src="img/portfolio/mvma/synthesis_5stage.PNG"></img><figcaption>Fig 21. Part 4: Synthesis Report- 5 stages</figcaption></figure>
+
+<p><figure><img src="img/portfolio/mvma/synthesis_6stage.PNG"></img><figcaption>Fig 22. Part 4: Synthesis Report- 6 stages</figcaption></figure>
+
+<p class="text-justify">The 5-stage design was used since it had the fastest clock speed of 1.81GHz. Figure 21 gives the total cell area of 17305.427um^2, Total Dynamic Power of 20.5452mW, cell leakage power of .336mW (Total Power=TDP+CLP= 20.881mW), and the critical path beginning at the accumulator to the dataout memory register.
+
+<p class="text-justify">After completing all the parts, it was found that we incorrectly assumed the input order to be m-x-b. Because the input order is m-b-x, the SystemVerilog and testbench code for parts 2 and 3 had to be slightly altered to fix the order. Part 4 required a complete rewrite since we implemented an optimization for vector b inputs that would perform computation as the vector b elements come in and eliminate the necessity of a memory module.
+
+<p class="text-justify">The code was tested for 1 million clock cycles to confirm the functionality of the circuit. The part4 testbench code was altered to include offset functionality. Every time a new feature was added, the corresponding offset parameter was set in the verilog code and tested with the testbench file. To test if our circuit will stall in the case that m_ready never arrived, we used an additional manually created testbench input file called part4_tb_manual_inputdata.txt. The output was manually checked for confirmation.
+</p>
+                            <hr class="star-primary">
+
+                            <ul class="list-inline item-details">
+                              <!--
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">personal</a>
+                                    </strong>
+                                </li>
+                              -->
+                              <h3><p class="text-justify">Link(s)</p></h3>
+                              
+                                    <h4><p class="text-left"><a href="https://github.com/radrajith/Pipelined_Matrix_Multiplier_NeuralNetwork/tree/master/proj2/Matrix%20Multiplier%20source%20code">Matrix Vector Mulitplier source code + TestBench (Private atm, can be provided on request)  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                              
+                                <li>Date:
+                                    <strong>NOV 2017</strong>
+                                </li>
+                                <!--
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                -->
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-8"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" >
+                        <div class="modal-body">
+                            <h2>Parity Generator - VLSI Layout</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/parityGen_layout_200nm.png" class="img-responsive img-centered"  alt="image-alt">
+                            <!-- 
+                              <h4><p class="text-left"><a href="https://app.box.com/s/1415uxdn3qnab2m2uqecxckcijee09bc">Parity Generator Design - PDF Report  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                             -->
+                            <p class="text-justify">Designing a Parity Generator using xor gates in the static cmos 45nm technology. The design objective is to obtain the best power delay product. The parity generator drives an external load of 12fF. The propagation delay of the circuit has to be less than 200ps.</p>
+                            <hr class="star-primary">
+
+                            <ul class="list-inline item-details">
+                              <!--
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">personal</a>
+                                    </strong>
+                                </li>
+                              -->
+                              <h3><p class="text-justify">Link(s)</p></h3>
+                              
+                                    <h4><p class="text-left"><a href="https://app.box.com/s/1415uxdn3qnab2m2uqecxckcijee09bc">Parity Generator Design - PDF Report  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                              
+                                <li>Date:
+                                    <strong>OCT 2017</strong>
+                                </li>
+                                <!--
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                -->
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-9"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" >
+                        <div class="modal-body">
+                            <h2>VLSI Netlist Partitioning using Fiduccia Mattheyses</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/FM.png" class="img-responsive img-centered"  alt="image-alt">
+                            <!-- 
+                              <h4><p class="text-left"><a href="https://app.box.com/s/hrva86yn59m4jw3at3heezthf9s2uzxe">FM Patitioning algorithm - PDF Report  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                             -->
+                            <p class="text-justify">Fiduccia-Mattheyses(FM) is an algorithm which handles the problem of dividing a large netlist, with many nodes, into two sets under particular size constraints. Partitioning is a key part of Very Large-Scale Integration (VLSI) design. VLSI design can typically be broken into the main stages of partitioning, floorplanning, placement, and routing.  In Partitioning, the goal is minimizing the cutset size, which is defined as the number of edges connecting two partitions. Of the many approaches taken to solve this problem, the most common is the Kernighan-Lin(KL) approach. This approach involves swapping pairs of nodes to decrease the cutset size.  However, this algorithm is limited to only balanced partitions, and does not include the concept of a hyper edge. Fiduccia-Mattheyses is a modification of the KL approach to include the concept of hyperedges, and adds a bucket list data structure to decrease the time complexity of the algorithm from O(n^3) to O(n^2). --A group project done along with Ryan and Nick</p>
+                            <hr class="star-primary">
+
+                            <ul class="list-inline item-details">
+                              <!--
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">personal</a>
+                                    </strong>
+                                </li>
+                              -->
+                              <h3><p class="text-justify">Link(s)</p></h3>
+                              
+                                    <h4><p class="text-left"><a href="https://app.box.com/s/hrva86yn59m4jw3at3heezthf9s2uzxe">FM Patitioning algorithm - PDF Report  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                              
+                                <li>Date:
+                                    <strong>OCT 2017</strong>
+                                </li>
+                                <!--
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                -->
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-4"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" >
+                        <div class="modal-body">
+                            <h2>Advanced VLSI Testing and Verification</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/VLSI_Chip.jpg" class="img-responsive img-centered"  alt="image-alt">
+                            <!-- 
+                              <h4><p class="text-left"><a href="https://github.com/radrajith/VLSI-System-Testing/tree/master/Project%203%20-%20Podem%20ATPG">Source Code</a>
+<p class="text-left"><a href="https://app.box.com/s/b9bt80zcdj3nfequtgb4sihvzj20qiog">Results and Discussion</a>
+  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                             -->
+                            <p class="text-justify">Constructed, optimized, and evaluated targeted Automatic Test Pattern Generation(ATPG) tool using the PODEM algorithm for fault detection. The PODEM algorithm is implmented using functions like backtrace, getObjective, checkFault, and simulateFullCircuit. In addition, the updateDfrontier function will be used to recursively run through the benchmark circuits from primary outputs to primary inputs looking for D or Dbar. utilizing gates in the Dfrontier the ATPG will generate the testvectors. In order to increase the speed of the algorithm, event driven simulation was implemented for 10x speed increase. The test vector size were reduced by running fault simulator and utilizing don’t cares in the test vector to obtain only unique faults. SCOAP metrics were calculated for each inputs and output of the gates and were used to make smarter decision while running algorithm. More details to be added.</p>
+                            <hr class="star-primary">
+
+                            <ul class="list-inline item-details">
+                              <!--
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">personal</a>
+                                    </strong>
+                                </li>
+                              -->
+                              <h3><p class="text-justify">Link(s)</p></h3>
+                              
+                                    <h4><p class="text-left"><a href="https://github.com/radrajith/VLSI-System-Testing/tree/master/Project%203%20-%20Podem%20ATPG">Source Code</a>
+<p class="text-left"><a href="https://app.box.com/s/b9bt80zcdj3nfequtgb4sihvzj20qiog">Results and Discussion</a>
+  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                              
+                                <li>Date:
+                                    <strong>MAY 2017</strong>
+                                </li>
+                                <!--
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                -->
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-7"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" >
+                        <div class="modal-body">
+                            <h2>Merging multiple pcb laout/gerber files - Tutorial</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/PCB.jpg" class="img-responsive img-centered"  alt="image-alt">
+                            <!-- 
+                              <h4><p class="text-left"><a href="https://radrajith.github.io/gerbmerge/">Project Tutorial Page Link  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                             -->
+                            <p class="text-justify">Gerbmerge is software written in python that will combine multiple gerber files into one super board. Gerbmerge offers both manual and automatic (optimization algorithms) as means of board placement. Because eagle cad design software has a limitation of 100x80mm routing area (express) or 160x100mm routing area(edu) , multiple boards cannot be combined together without requiring to upgrade a paid version. To work around this limitation, we can combine the gerber files generated from the eagle instead. By combining the gerber files, we also avoid the problems caused by the panelizing script which redefines all the components to different names. (We combined boards of 10 people and checking each person's board for name conflict is an annoying and time consuming task). The gerbmerge code is originally written by ruggecircuits, here I added some extra programs and altered the code to enable ease up merging the PCBs. This tutorial is a detailed explanation of how to accomplish this goal.
+</p>
+                            <hr class="star-primary">
+
+                            <ul class="list-inline item-details">
+                              <!--
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">personal</a>
+                                    </strong>
+                                </li>
+                              -->
+                              <h3><p class="text-justify">Link(s)</p></h3>
+                              
+                                    <h4><p class="text-left"><a href="https://radrajith.github.io/gerbmerge/">Project Tutorial Page Link  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                              
+                                <li>Date:
+                                    <strong>Dec 2016</strong>
+                                </li>
+                                <!--
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                -->
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-1"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" >
+                        <div class="modal-body">
+                            <h2>Improved Ammeter PCB design from scratch + 3D printing</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/ammeter.jpg" class="img-responsive img-centered"  alt="image-alt">
+                            <!-- 
+                              <h4><p class="text-left"><a href="https://radrajith.github.io/ESE_323_PCB_Design/">Project website Link  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                             -->
+                            <p class="text-justify">This current meter design is intended to minimize the effects of burden voltage that is present in most Multimeters in the market. The current meter is designed to read up to 7A. The maximum current rating is set to be 8A (the fuse will break at this point) and will only be able to read positive DC currents. The circuit can be powered by a battery with a voltage ranging from 2.5 to 5v, in this design 2-AAA battery is used as a power source i.e 3V source. The Analog current measurement will be sampled at 12kSPS (based on atxmega32 specs), and the digital output will have 12-bit resolution.<p class="text-justify">The current is read by measuring the voltage that flows across a shunt resistor. The shunt resistor is specially chosen to have current sense technology, where the resistors packs have 4 terminals, 2 for current flow, and 2 for current measurement. The voltage across the resistor is read using the Atxmega micro controller’s built in Analog to digital converter(ADC).<p class="text-justify">A LCD touch screen is added to display the current readings such as peak, instantaneous, rms etc. In addition the LCD will be used to graph continuous data assuming I will finish the programming on time. Since the programming had to go through a number of revisions, a PDI communication will be implemented to modify the code as intended. In addition to serving as a normal current meter, A USB port will be added to monitor the current usage of mobile phone or other devices charged using USB. A micro usb port will be used as the input and USB as output.</p>
+                            <hr class="star-primary">
+
+                            <ul class="list-inline item-details">
+                              <!--
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">personal</a>
+                                    </strong>
+                                </li>
+                              -->
+                              <h3><p class="text-justify">Link(s)</p></h3>
+                              
+                                    <h4><p class="text-left"><a href="https://radrajith.github.io/ESE_323_PCB_Design/">Project website Link  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                              
+                                <li>Date:
+                                    <strong>Dec 2016</strong>
+                                </li>
+                                <!--
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                -->
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-2"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" >
+                        <div class="modal-body">
+                            <h2>Data Structures using Java</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/Java.jpg" class="img-responsive img-centered"  alt="image-alt">
+                            <!--  -->
+                            <p class="text-justify"><h3 align="left"><a id = "Arrays">>Course Planner using Lists</a></h3>
+<p class="text-justify">The course planner is designed using list/array data structure where students can record the courses they want to take in order of preference. A course contains general information such as course name, course code, course section, instructor, etc. The planner should be able to record a total of 50 courses. The program provides the ability to add courses, remove courses, get courses, print the planner, Filter courses, search courses, backup planner and obtain the size of the planner.
+<p style="text-align:left;"><a href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/radrajith/Data-Structures-in-Java/master/hw%231/Assignment%20Requirements/hw1(4).html">Couser Planner Project Requirements</a>
+<p style="text-align:left;"><a href="https://github.com/radrajith/Data-Structures-in-Java/tree/master/hw%231/src/hw1">Course Planner Project Source Code</a></p>
+
+
+<hr class="star-primary">
+<h3 align="left"><a id = "LinkedLists">>Train Car Manager using Double Linked List</a></h3>
+<img src="img/portfolio/datastructures/hw2.PNG"></img>
+<p class="text-justify">Designed train car manager for a commercial train, modelled using a Double-Linked List data structure. Train car manager consists of a chain of train cars, each of which contains a product load. A product load has a weight, a value, and can be dangerous or safe. The train car manager will be able to add and remove cars from the train, set the product load for each car, and determine useful properties of the train, such as it's length, weight, total value, and whether it contains any dangerous product loads. All the properties completes in O(1) time complexity. <p style="text-align:left;"><a href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/radrajith/Data-Structures-in-Java/master/hw%232/Assignment%20Requirements/hw2(8).html">Train Car Manager Project Requirements</a>
+<p style="text-align:left;"><a href="https://github.com/radrajith/Data-Structures-in-Java/tree/master/hw%232/src">Train Car Manager Project Source Code</a>
+
+
+<hr class="star-primary">
+<h3 align="left"><a id = "Stacks">>Code Tracer to return Big-Oh order of complexity using Stacks</a></h3>
+<img src="img/portfolio/datastructures/hw3.PNG"></img>
+<p class="text-justify">Most programming languages are organized as structured blocks of statements, with some blocks nested within others. Functions, which are examples of such blocks, execute statements and other blocks contained within the them. Similarly, flow control strucutres, such as for and while loops, are blocks which can be executed several times subject to some condition. The Python programming language is an example of a language which follows this principle, and is even flexible enough to allow functions to be nested within functions!.
+
+<p class = "text-justify">A code tracer program is designed which takes the name of a Python file containing a single function and outputs the Big-Oh order of complexity of that function. BlockStack class is implemented to determine the complexity of blocks with nested blocks, and use the rules of Big-Oh complexity to determine the total complexity for the function.
+<p style="text-align:left;"><a href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/radrajith/Data-Structures-in-Java/master/hw%233/Assignment%20requirements/hw3(4).html">Code Tracer Project Requirements</a>
+<p style="text-align:left;"><a href="https://github.com/radrajith/Data-Structures-in-Java/tree/master/hw%233/src">Code Tracer Source Code</a>
+
+<hr class="star-primary">
+<h3 align="left"><a id = "Queues">>Network of routers simulator using Queues</a></h3>
+<img src="img/portfolio/datastructures/hw4.PNG"></img>
+<p class="text-justify">Imitating a simple network of routers by writing a simulator using Queues. In the field of networking, information is packed into a single entity called a packet. A packet contains the sender's information, and also extra overhead bits that describes certain properties of the packet. Some of these bits are used to determine the path it takes to maneuver through the network. Packets travel through routers across the network, until they have arrived to their specified destination.
+<p style="text-align:left;"><a href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/radrajith/Data-Structures-in-Java/master/hw%234_with_gui/Assignment%20requirements/hw4(6).html">Router Project Requirements Link</a>
+<p style="text-align:left;"><a href="https://github.com/radrajith/Data-Structures-in-Java/tree/master/hw%234_with_gui/src">Router Project Source Code</a>
+
+<hr class="star-primary">
+<h3 align="left"><a id = "BinaryTrees">>Build a shell/Bash terminal using Binary trees</a></h3>
+<img src="img/portfolio/datastructures/hw5.PNG"></img>
+<p class="text-justify">Modeling a file system using a ternary (3-child) tree data structure. In most operating systems, files are stored in directories. These directories may contain other directories along with files. In addition to a file system, an OS typically also provides a shell, which is an interface allowing you to run programs and move through the file system.
+<img src="img/portfolio/datastructures/hw5_2.jpg"></img>
+<p style="text-align:left;"><a href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/radrajith/Data-Structures-in-Java/master/hw%235_EC/Assignment%20requirement/hw5(4).html">Binary Trees Project Requirements</a>
+<p style="text-align:left;"><a href="https://github.com/radrajith/Data-Structures-in-Java/tree/master/hw%235_EC/src">Binary Trees Project Source Code</a><hr class="star-primary">
+
+<h3 align="left"><a id = "HashTable">>Create a Auction site with Ebay listing data using Hash Table</a></h3>
+<p class="text-justify">Designing the Auction site data base using Hash Table Data structure. A very basic array can store information without a problem, but is inefficient when we are constantly storing and searching for data. The table is created to increase the efficiency and avoid such problems. Tables store data using a tuple <Key, Value>. Ideally, this will reduce the algorithm to O(1). For this project, real auction data from ebay is utilized. The data will be in the form of an XML file. The program will read this xml file and build a hash table based on the data.
+<p style="text-align:left;"><a href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/radrajith/Data-Structures-in-Java/master/hw%236_with_gui/Assignment%20Requirement/hw6(10).html">Auction site Project Requirements Link</a>
+<p style="text-align:left;"><a href="https://github.com/radrajith/Data-Structures-in-Java/tree/master/hw%236_with_gui/src">Aution site Project Source Code</a><hr class="star-primary">
+
+<h3 align="left"><a id="Graph">>Simplified version of Google's PageRank Algorithm using Graphs</a></h3><img src="img/portfolio/datastructures/hw7.PNG"></img>
+<p class="text-justify">Implemented a directed graph of WebPage objects by reading pages.txt and links.txt. Once the graph is constructed, the program will run a basic search engine that prompts the user to enter a keyword. The program will then perform the PageRank algorithm, and display the pages to the user in tabular form sorted by descending PageRank.
+<p style="text-align:left;"><a href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/radrajith/Data-Structures-in-Java/master/hw%237_with_gui/Assignment%20Requirement/hw7(4).html">PageRank Project Requirements</a>
+<p style="text-align:left;"><a href="https://github.com/radrajith/Data-Structures-in-Java/tree/master/hw%237_with_gui/src">PageRank Project Source Code</a>
+</p>
+                            <hr class="star-primary">
+
+                            <ul class="list-inline item-details">
+                              <!--
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">personal</a>
+                                    </strong>
+                                </li>
+                              -->
+                              <h3><p class="text-justify">Link(s)</p></h3>
+                              
+                                <li>Date:
+                                    <strong>Dec 2015</strong>
+                                </li>
+                                <!--
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                -->
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-3"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" >
+                        <div class="modal-body">
+                            <h2>Smart outlet controlled by sunrise/sunset/app [IoT]</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/iot.jpg" class="img-responsive img-centered"  alt="image-alt">
+                            <!-- 
+                              <h4><p class="text-left"><a href="https://www.instructables.com/id/Smart-Outlet-That-Turn-on-During-Sunset-Using-Spar/">Project website Link  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                             -->
+                            <p class="text-justify">I wanted to have a night lamp that will turn on after sunset and turn off in the middle of the night/ sunrise. The timers available at Home Depot or other hardware stores only allows to set a time. Since in USA there is daylight saving time, it had to be changed. To solve this, the outlet is connected to the internet to obtain the sunset timings daily. This project used Spark core to control the power outlet and IFTTT API to obtain the timings of sunset/sunrise/weather. As shown in the video at the above link, the Outlet was turned into a IoT device. <b>This project was a featured project on instructables website on Jan 11, 2016.</b></p>
+                            <hr class="star-primary">
+
+                            <ul class="list-inline item-details">
+                              <!--
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">personal</a>
+                                    </strong>
+                                </li>
+                              -->
+                              <h3><p class="text-justify">Link(s)</p></h3>
+                              
+                                    <h4><p class="text-left"><a href="https://www.instructables.com/id/Smart-Outlet-That-Turn-on-During-Sunset-Using-Spar/">Project website Link  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                              
+                                <li>Date:
+                                    <strong>Jan 2016</strong>
+                                </li>
+                                <!--
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                -->
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal-5"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" >
+                        <div class="modal-body">
+                            <h2>Other projects are being added, Site still work in progress</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/image-alt.jpg" class="img-responsive img-centered"  alt="image-alt">
+                            <!-- 
+                              <h4><p class="text-left"><a href="https://radrajith.github.io/ESE_323_PCB_Design/">Project website  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                             -->
+                            <p class="text-justify">Content will be added soon. Site still under progress.</p>
+                            <hr class="star-primary">
+
+                            <ul class="list-inline item-details">
+                              <!--
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">personal</a>
+                                    </strong>
+                                </li>
+                              -->
+                              <h3><p class="text-justify">Link(s)</p></h3>
+                              
+                                    <h4><p class="text-left"><a href="https://radrajith.github.io/ESE_323_PCB_Design/">Project website  <i class="fa fa-search-plus" aria-hidden="true"></i></a></p></h4>
+                              
+                                <li>Date:
+                                    <strong>MAY 2017</strong>
+                                </li>
+                                <!--
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com"></a>
+                                    </strong>
+                                </li>
+                                -->
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    
+    <script src="js/contact_me_static.js"></script>
+    
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+    <script src="js/history.js"></script>
+    
+
+    </body>
+</html>

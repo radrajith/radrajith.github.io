@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator>
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2017-11-09T11:17:51-05:00</updated>
+  <updated>2017-11-09T13:33:54-05:00</updated>
   <id>http://localhost:4000/</id>
 
   
@@ -18,6 +18,62 @@
   
 
   
+  
+    <entry>
+      <title type="html">Matrix Vector Multiplication hardware Generator using System Verilog</title>
+      <link href="http://localhost:4000/projects/2017/11/06/MVMA_verilog/" rel="alternate" type="text/html" title="Matrix Vector Multiplication hardware Generator using System Verilog" />
+      <published>2017-11-06T00:00:00-05:00</published>
+      <updated>2017-11-06T00:00:00-05:00</updated>
+      <id>http://localhost:4000/projects/2017/11/06/MVMA_verilog</id>
+      <content type="html" xml:base="http://localhost:4000/projects/2017/11/06/MVMA_verilog/"></content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name></name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="Software" />
+      
+        <category term="System Verilog" />
+      
+        <category term="Synthesis" />
+      
+        <category term="Simulation" />
+      
+        <category term="Matrix Vector Multiplier" />
+      
+        <category term="Verilog" />
+      
+        <category term="Pipelining" />
+      
+        <category term="DC" />
+      
+        <category term="SLACK" />
+      
+        <category term="STA" />
+      
+        <category term="Static timing analysis" />
+      
+        <category term="Neural Network" />
+      
+
+      
+        <summary type="html"></summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Parity Generator - VLSI Layout</title>
@@ -455,60 +511,6 @@
         <category term="Magnets" />
       
         <category term="Cryogenics" />
-      
-
-      
-        <summary type="html"></summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Smart outlet controlled by sunrise/sunset/app [IoT]</title>
-      <link href="http://localhost:4000/projects/2016/01/10/SmartHome/" rel="alternate" type="text/html" title="Smart outlet controlled by sunrise/sunset/app [IoT]" />
-      <published>2016-01-10T00:00:00-05:00</published>
-      <updated>2016-01-10T00:00:00-05:00</updated>
-      <id>http://localhost:4000/projects/2016/01/10/SmartHome</id>
-      <content type="html" xml:base="http://localhost:4000/projects/2016/01/10/SmartHome/"></content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name></name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="Software" />
-      
-        <category term="Iot" />
-      
-        <category term="Spark Core" />
-      
-        <category term="IFTTT" />
-      
-        <category term="Smart home" />
-      
-        <category term="Smart lamp" />
-      
-        <category term="Smart Outlet" />
-      
-        <category term="Relays" />
-      
-        <category term="microcontrollers" />
-      
-        <category term="Sun controlled" />
-      
-        <category term="instructables" />
       
 
       
